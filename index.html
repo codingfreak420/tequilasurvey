@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>  
+  <body>
+    <h1 id='title'>Tequila Time</h1>
+      <p id='description'>Please take this survery to help me better understand the tequila market in our area.</P>  
+    <form  id='survey-form'>   
+     <fieldset>
+        <label id='name-label'>Name<input id='name' type='text' placeholder='Name' required ></input>
+        <label id='email-label'>Email<input id='email' type='email' placeholder='Email' required ></input>
+        <label id='number-label'>Age<input id='number' type='number' min="13" max="120" placeholder='Age' required></input></fieldset>
+        <fieldset>
+        <label for='dropdown'>What is your favorite type of tequila?
+        <select id='dropdown'>
+            <option value="">(select one)</option>
+            <option value="blanco">Blanco</option>
+            <option value="reposado">Reposado</option>
+            <option value="anejo">Anejo</option>
+           <option value="extra anejo">Extra Anejo</option> 
+           <option value="cristalino">Cristalino</option>
+            </fieldset>
+            <fieldset>
+            </select>
+         <label for='How often'>How often do you try new brands of tequila?</label><label for='often'><input id='often' value='often' type='radio'
+name='ops' 
+class='inline' />Often</label><label for='occasionally'><input id='occasionally' value='occasionally' type='radio'
+name='ops' 
+class='inline'>Occasionally</label>
+     <input id='never' value='never' type='radio'
+name='ops' 
+class='inline'>Never</label>
+      </fieldset>
+      <fieldset>
+      <label for='dropdown'>How do you prefer your tequila prepared?
+        <select id='dropdown'>
+            <option value="">(select one)</option>
+            <option value="rocks">On the Rocks</option>
+            <option value="marg">Margarita</option>
+            <option value="clubsoda/water">Club Soda/Water</option>
+            <option value="other">Other Mixed Drink</option></select>
+            </fieldset>
+            <fieldset>
+            <label for='question3'>Where do you find yourself enjoying tequila the most?</label>
+            <label for='social'><input type='checkbox' value='social' class='q3'>Social Events</input></label>
+            <label for='private'><input type='checkbox' value='private'class='q3' >Home/In Private</input></label>
+            <label for='bar/restraunt'><input type='checkbox' value='bar/restraunt' class='q3'>Bar/Restraunt</input></label>
+            </fieldset>
+            <fieldset>
+              <textarea for='comments'>Tell me something you love about tequila!</textarea>
+              <input id='submit' type="submit" value="Submit" />
+     
+    </form>
+</html>
